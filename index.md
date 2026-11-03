@@ -5,7 +5,8 @@ nav_order: 1
 
 # Caltech SASE
 
-Practical guidance for writing research software at Caltech: best
+Practical guidance for
+research software development at Caltech: best
 practices, tutorials, curated resources, tools we've built, and ways to get
 help.
 
