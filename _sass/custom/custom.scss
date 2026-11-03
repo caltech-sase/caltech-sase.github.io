@@ -1,0 +1,25 @@
+// Caltech orange accent bar along the top of the page.
+.main-header {
+  border-top: 4px solid #ff6c0c;
+}
+
+// Under construction banner at the top of every page.
+// Delete this block and the breadcrumb fix below when the site is ready.
+.main-content-wrap::before {
+  content: "🚧 This site is under construction and not ready for use yet.";
+  display: block;
+  margin-top: 1rem;
+  padding: 0.5rem 0.75rem;
+  border-left: 4px solid #ff6c0c;
+  background: #fff3eb;
+  color: #7a3100;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+// Stop the theme pulling breadcrumbs up over the banner on wide screens.
+.breadcrumb-nav {
+  @include mq(md) {
+    margin-top: 0;
+  }
+}

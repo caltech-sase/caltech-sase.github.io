@@ -1,0 +1,67 @@
+title: Caltech SASE
+description: >-
+  Research software engineering at Caltech: best practices, resources,
+  tools, workshops, and office hours.
+url: https://caltech-sase.github.io
+baseurl: ""
+
+# Built and deployed by .github/workflows/pages.yml
+theme: just-the-docs
+plugins:
+  - jekyll-seo-tag
+  - jekyll-sitemap
+  - jekyll-relative-links
+
+color_scheme: caltech
+search_enabled: true
+heading_anchors: true
+back_to_top: true
+back_to_top_text: Back to top
+
+aux_links:
+  GitHub: https://github.com/caltech-sase
+aux_links_new_tab: true
+
+gh_edit_link: true
+gh_edit_link_text: Edit this page on GitHub
+gh_edit_repository: https://github.com/caltech-sase/caltech-sase.github.io
+gh_edit_branch: main
+gh_edit_view_mode: edit
+
+footer_content: >-
+  Caltech SASE · Content licensed
+  <a href="https://creativecommons.org/publicdomain/zero/1.0/">CC0</a>
+
+# Callouts: write `{: .note }` on the line before a paragraph.
+callouts:
+  note:
+    title: Note
+    color: blue
+  tip:
+    title: Tip
+    color: green
+  warning:
+    title: Warning
+    color: yellow
+
+# Hide Sass deprecation warnings that come from the theme.
+sass:
+  quiet_deps: true
+  silence_deprecations:
+    - import
+    - global-builtin
+    - color-functions
+
+exclude:
+  - README.md
+  - LICENSE
+  - Gemfile
+  - Gemfile.lock
+  - .ruby-version
+  - vendor
+
+defaults:
+  - scope:
+      path: ""
+    values:
+      layout: default

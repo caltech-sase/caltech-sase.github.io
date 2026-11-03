@@ -1,0 +1,4 @@
+// Caltech orange (#FF6C0C) is too light for readable text on white (2.8:1),
+// so links and buttons use darker shades that meet WCAG AA contrast.
+$link-color: #b84a00;
+$btn-primary-color: #c24e00;
