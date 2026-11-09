@@ -1,0 +1,16 @@
+{
+  "name": "research-software",
+  "description": "Skills for developing reliable, reproducible, and reusable research software.",
+  "type": "module",
+  "license": "CC0-1.0",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/caltech-sase/caltech-sase.github.io.git",
+    "directory": "agent-plugins/research-software"
+  },
+  "main": "./index.js",
+  "exports": {
+    ".": "./index.js",
+    "./server": "./index.js"
+  }
+}

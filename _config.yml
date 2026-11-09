@@ -59,6 +59,7 @@ exclude:
   - Gemfile.lock
   - .ruby-version
   - vendor
+  - agent-plugins
 
 defaults:
   - scope:

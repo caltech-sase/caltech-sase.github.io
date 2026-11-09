@@ -1,0 +1,16 @@
+{
+  "name": "research-software",
+  "description": "Skills for developing reliable, reproducible, and reusable research software.",
+  "author": {
+    "name": "Caltech SASE",
+    "url": "https://github.com/caltech-sase"
+  },
+  "homepage": "https://caltech-sase.github.io",
+  "repository": "https://github.com/caltech-sase/caltech-sase.github.io",
+  "license": "CC0-1.0",
+  "keywords": [
+    "research",
+    "reproducibility",
+    "best-practices"
+  ]
+}
