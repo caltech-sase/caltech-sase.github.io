@@ -1,0 +1,35 @@
+<script>
+  // Dark mode is the default; the header toggle saves a light preference.
+  // Swap the stylesheet before the page renders so it doesn't flash.
+  (function () {
+    var darkHref = "{{ '/assets/css/just-the-docs-default.css' | relative_url }}";
+    var lightHref = "{{ '/assets/css/just-the-docs-caltech.css' | relative_url }}";
+    var sheet = document.querySelector('link[rel="stylesheet"]');
+
+    function load() {
+      try { return localStorage.getItem("sase-theme"); } catch (e) { return null; }
+    }
+    function save(theme) {
+      try { localStorage.setItem("sase-theme", theme); } catch (e) {}
+    }
+    function apply(theme) {
+      sheet.setAttribute("href", theme === "light" ? lightHref : darkHref);
+      var button = document.getElementById("theme-toggle");
+      if (button) button.setAttribute("aria-pressed", theme === "light" ? "false" : "true");
+    }
+
+    var theme = load() === "light" ? "light" : "dark";
+    apply(theme);
+
+    document.addEventListener("DOMContentLoaded", function () {
+      var button = document.getElementById("theme-toggle");
+      if (!button) return;
+      apply(theme);
+      button.addEventListener("click", function () {
+        theme = theme === "light" ? "dark" : "light";
+        save(theme);
+        apply(theme);
+      });
+    });
+  })();
+</script>

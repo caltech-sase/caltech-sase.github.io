@@ -1,6 +1,30 @@
+// Fallbacks for the theme's built-in schemes, which don't set these.
+$sase-banner-background: #fff3eb !default;
+$sase-banner-color: #7a3100 !default;
+
 // Caltech orange accent bar along the top of the page.
 .main-header {
   border-top: 4px solid #ff6c0c;
+}
+
+// Light/dark toggle in the header, next to the GitHub link.
+// Show the sun in dark mode and the moon in light mode.
+.theme-toggle {
+  margin-left: auto;
+  border: 0;
+  background: none;
+  color: $body-text-color;
+  cursor: pointer;
+
+  @if $color-scheme == dark {
+    .theme-toggle-moon {
+      display: none;
+    }
+  } @else {
+    .theme-toggle-sun {
+      display: none;
+    }
+  }
 }
 
 // Under construction banner at the top of every page.
@@ -11,8 +35,8 @@
   margin-top: 1rem;
   padding: 0.5rem 0.75rem;
   border-left: 4px solid #ff6c0c;
-  background: #fff3eb;
-  color: #7a3100;
+  background: $sase-banner-background;
+  color: $sase-banner-color;
   font-size: 0.875rem;
   font-weight: 500;
 }

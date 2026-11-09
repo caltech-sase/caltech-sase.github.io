@@ -1,0 +1,10 @@
+// Dark mode, the site default. Caltech orange is readable on the dark
+// background (5.4:1), so links can use it directly.
+@import "color_schemes/dark";
+
+$link-color: #ff6c0c;
+$btn-primary-color: #c24e00;
+
+// Under construction banner (see custom.scss).
+$sase-banner-background: #3a2a22;
+$sase-banner-color: #ffc29a;

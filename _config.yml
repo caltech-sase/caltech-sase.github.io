@@ -12,7 +12,7 @@ plugins:
   - jekyll-sitemap
   - jekyll-relative-links
 
-color_scheme: caltech
+color_scheme: caltech-dark
 search_enabled: true
 heading_anchors: true
 back_to_top: true
