@@ -5,10 +5,10 @@
   },
   "plugins": [
     {
-      "name": "research-software",
+      "name": "sase",
       "source": {
         "source": "local",
-        "path": "./agent-plugins/research-software"
+        "path": "./agent-plugins/sase"
       },
       "policy": {
         "installation": "AVAILABLE",

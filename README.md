@@ -37,16 +37,16 @@ User-facing install and usage docs are on the [Tools](tools.md) page.
 For Claude Code, users can install it with:
 
 ```text
-/plugin install research-software --marketplace caltech-sase/caltech-sase.github.io
+/plugin install sase --marketplace caltech-sase/caltech-sase.github.io
 ```
 
 All three tools share one set of skills in
-`agent-plugins/research-software/skills/`:
+`agent-plugins/sase/skills/`:
 
 ```text
 .claude-plugin/marketplace.json     # Claude Code marketplace
 .agents/plugins/marketplace.json    # Codex marketplace
-agent-plugins/research-software/
+agent-plugins/sase/
 ├── .claude-plugin/plugin.json      # Claude Code manifest
 ├── .codex-plugin/plugin.json       # Codex manifest
 ├── package.json, index.js          # OpenCode plugin (registers the skills)
@@ -66,7 +66,7 @@ To test locally:
 
 ```sh
 claude plugin validate .
-claude --plugin-dir ./agent-plugins/research-software
+claude --plugin-dir ./agent-plugins/sase
 ```
 
 The `agent-plugins` folder is excluded from the Jekyll build in

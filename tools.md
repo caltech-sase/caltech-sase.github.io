@@ -9,7 +9,7 @@ Software we've built to support research software development.
 
 ## Agent plugins and skills
 
-The `research-software` plugin gives AI coding agents
+The `sase` plugin gives AI coding agents
 [skills](https://agentskills.io) based on our
 [best practices](best-practices/index.md).
 It works with [Claude Code](https://code.claude.com),
@@ -30,14 +30,14 @@ In a Claude Code session, run:
 
 ```text
 /plugin marketplace add caltech-sase/caltech-sase.github.io
-/plugin install research-software@caltech-sase
+/plugin install sase@caltech-sase
 ```
 
 Or, from a terminal:
 
 ```sh
 claude plugin marketplace add caltech-sase/caltech-sase.github.io
-claude plugin install research-software@caltech-sase
+claude plugin install sase@caltech-sase
 ```
 
 #### Codex
@@ -46,7 +46,7 @@ From a terminal, run:
 
 ```sh
 codex plugin marketplace add caltech-sase/caltech-sase.github.io
-codex plugin add research-software@caltech-sase
+codex plugin add sase@caltech-sase
 ```
 
 You can also run `/plugins` in Codex and install it from the
@@ -58,7 +58,7 @@ Start a new session afterward.
 You'll need OpenCode 2 or newer. From a terminal, run:
 
 ```sh
-opencode plugin add 'git+https://github.com/caltech-sase/caltech-sase.github.io.git#main::path:agent-plugins/research-software'
+opencode plugin add 'git+https://github.com/caltech-sase/caltech-sase.github.io.git#main::path:agent-plugins/sase'
 ```
 
 This adds the plugin to your global OpenCode config
@@ -102,7 +102,7 @@ To update by hand instead, run:
 
 ```sh
 claude plugin marketplace update caltech-sase
-claude plugin update research-software@caltech-sase
+claude plugin update sase@caltech-sase
 ```
 
 {: .note }
@@ -141,7 +141,7 @@ a skill is for, so you can just ask, e.g.:
 
 To run a skill explicitly:
 
-- **Claude Code:** `/research-software:review-repo`
+- **Claude Code:** `/sase:review-repo`
 - **Codex:** type `$` and pick `review-repo`, or browse with `/skills`
 - **OpenCode:** ask it to use the `review-repo` skill
 
@@ -152,6 +152,6 @@ makes before you commit them.
 ### Contribute
 
 The plugin lives in the
-[`agent-plugins/research-software`](https://github.com/caltech-sase/caltech-sase.github.io/tree/main/agent-plugins/research-software)
+[`agent-plugins/sase`](https://github.com/caltech-sase/caltech-sase.github.io/tree/main/agent-plugins/sase)
 folder of this site's repository.
 Suggestions and new skills are welcome: open an issue or pull request.

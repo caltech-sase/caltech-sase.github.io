@@ -7,8 +7,8 @@
   "description": "Agent plugins for research software development from Caltech SASE.",
   "plugins": [
     {
-      "name": "research-software",
-      "source": "./agent-plugins/research-software",
+      "name": "sase",
+      "source": "./agent-plugins/sase",
       "description": "Skills for developing reliable, reproducible, and reusable research software.",
       "category": "development",
       "tags": ["research", "reproducibility", "best-practices"]

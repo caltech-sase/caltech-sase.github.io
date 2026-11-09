@@ -1,5 +1,5 @@
 {
-  "name": "research-software",
+  "name": "sase",
   "description": "Skills for developing reliable, reproducible, and reusable research software.",
   "author": {
     "name": "Caltech SASE",
@@ -15,7 +15,7 @@
   ],
   "skills": "./skills/",
   "interface": {
-    "displayName": "Research Software",
+    "displayName": "Caltech SASE",
     "shortDescription": "Best practices for research software from Caltech SASE",
     "longDescription": "Skills that help you develop reliable, reproducible, and reusable research software, following the Caltech SASE best practices.",
     "developerName": "Caltech SASE",

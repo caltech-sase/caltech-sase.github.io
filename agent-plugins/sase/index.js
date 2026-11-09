@@ -59,7 +59,7 @@ function loadSkills() {
 }
 
 export default {
-  id: "caltech-sase.research-software",
+  id: "caltech-sase",
   async setup(ctx) {
     const skills = loadSkills();
     await ctx.skill.transform((editor) => {
@@ -69,7 +69,7 @@ export default {
         try {
           editor.add(skill);
         } catch (err) {
-          console.error(`research-software: skipping skill ${skill.id}:`, err);
+          console.error(`sase: skipping skill ${skill.id}:`, err);
         }
       }
     });
