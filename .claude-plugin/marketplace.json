@@ -1,0 +1,17 @@
+{
+  "name": "caltech-sase",
+  "owner": {
+    "name": "Caltech SASE",
+    "url": "https://github.com/caltech-sase"
+  },
+  "description": "Agent plugins for research software development from Caltech SASE.",
+  "plugins": [
+    {
+      "name": "sase",
+      "source": "./agent-plugins/sase",
+      "description": "Skills for developing reliable, reproducible, and reusable research software.",
+      "category": "development",
+      "tags": ["research", "reproducibility", "best-practices"]
+    }
+  ]
+}
